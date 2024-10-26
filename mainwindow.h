@@ -27,6 +27,8 @@ class MainWindow : public QMainWindow
 
    void on_tableView_clicked(const QModelIndex &index);
 
+   void on_btnRefresh_clicked();
+
    private:
    Ui::MainWindow *ui;
    QSqlDatabase db;
