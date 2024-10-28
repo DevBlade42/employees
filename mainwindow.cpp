@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+ #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
    ui->setupUi(this);
 
    db = QSqlDatabase::addDatabase("QSQLITE");
-   db.setDatabaseName("./../../db/Employees.db");
+   db.setDatabaseName("./../../../db/Employees.db");
    if(db.open())
    {
       ui->statusbar->showMessage("Вы успешно подключились к базе данных: " + db.databaseName());
